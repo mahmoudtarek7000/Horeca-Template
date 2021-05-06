@@ -1,0 +1,494 @@
+/* general */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+  }
+a {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #e5e5e5;
+  }
+  h4 {
+    font-weight: 300;
+    font-size: 18px;
+}
+  ul {
+    list-style: none;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+    
+}
+ .btn {
+   background-color: #fff;
+   color: #eead73;
+   border-radius: 20px;
+   text-align: center;
+   border: 0.5px solid #fff;
+   padding: 10px 40px ;
+ }
+  /* nav */
+
+  .main-nav {
+    width: 100%;
+    position:fixed;
+    background-color: #88a74d8a;
+    padding: 15px 0 15px 0;
+  }
+
+  .main-nav .container {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding: 0 0 10px 0;
+  } 
+  
+  #main-nav_logo img {
+    width: 180px;
+    margin-bottom: 8px;
+  }
+  .main-nav_links {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .main-nav_links li a {
+    color: #fff;
+  }
+  #last_link a {
+    color: #eead73
+  }
+
+  /* header sec */
+  .main-header {
+  background-image:linear-gradient(to top,rgba(0,0,0,1),rgba(255, 255, 255, 0.05)), url(../img/header-background.jpg);
+  background-size:cover;
+  background-position: center;
+  padding: 25rem 0 5rem 0;
+  }
+.main-header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-header_sec {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8rem;
+  align-items: center;
+}
+#main_header_logo {
+  width:500px;
+}
+#main_header_logo img {
+  width: 100%;
+}
+.sec_part {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.sec_part_text {
+  text-align: center;
+  color: #fff;
+  margin-top: 14px;
+} 
+.sec_part_text p {
+  padding: 10px;
+  color: #e5e5e5;
+  line-height: 25px;
+}
+.sec_part figure img {
+  border-radius: 50%;
+  border: 7px solid #c5c5c4;
+}
+.header_btn {
+  margin-top: 3rem;
+}
+ /* about */
+ .about {
+   padding: 7rem 0;
+   background-color: #eee;
+ }
+ .about_sec {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+ }
+.about_part  {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column
+}
+.about_part_text {
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  margin-top: 2rem;
+  color: #373636;
+  justify-content: space-around;
+}
+
+.about_part_text .btn {
+  color : #88a74d ;
+  margin-top: 2rem;
+ align-self: center;
+}
+.about_part_text h4 {
+  text-align: center;
+  font-weight:600;
+  font-size: 22px;
+  color: #383838d7;
+}
+.sec_head {
+  text-align: center;
+}
+.sec_head h3 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 3rem;
+  color: #575755;
+}
+
+.over_cont {
+  position: relative;
+}
+.image_about {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+  background-color: rgba(26, 26, 26, 0.59);
+
+}
+.middle_overlay img {
+  display: block;
+}
+.over_cont .image_team {
+  opacity: 0.3;
+}
+.over_cont .middle_overlay {
+  opacity: 1;
+}
+
+/* newsletter */
+.newsletter {
+  padding: 5rem 0 5rem 0;
+  background-image:linear-gradient(to left,rgba(39, 39, 39, 0.549),rgba(126, 126, 126, 0.282)), url(../img/newsletter-back.jpg);
+  background-size:cover;
+  background-position: center;
+  margin-bottom: 4rem;
+}
+.newsletter .container {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.newsletter_text {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.newsletter_text h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.newsletter_form {
+      width: 100%;
+      text-align: center;
+}
+.news_mail {
+  border-radius: 20px 20px 20px 20px;
+ padding: 10px 80px 10px 80px;
+ border-color:#b5b5b53c ;
+  background-color: #ededed70;
+}
+.submit-btn {
+  background-color: #fff;
+   color: #eead73;
+   border-radius: 20px 20px 20px 20px;
+   text-align: center;
+   border: 0.5px solid #fff;
+   padding: 11px 50px 11px 50px;
+   margin-left: -35px;
+   font-weight:700;
+}
+/* ihoreca */
+.ihoreca .container {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+}
+.horeca_article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+.horeca_article figure {
+  width: 30%;
+}
+.horeca_article figure img {
+  border-radius: 50%;
+  border: 2px solid #eead73;
+  width: 100%;
+}
+.horeca_article_text {
+  width: 45%;
+}
+.horeca_article_text h3 {
+      font-size: 24px;
+      margin-bottom: 2rem;
+}
+.horeca_article_text p {
+  margin-bottom: 2rem;
+  line-height: 25px;
+}
+.horeca_article_text .btn {
+  background-color: #eead73;
+  color:#fff ;
+}
+.green-btn{
+  background-color: #88a74d  !important ;
+} 
+.existing_customer figure img {
+  border-color: #88a74d !important;
+}
+/* BRANDS */ 
+.brands {
+background-color: #eee;
+padding: 3rem 0;
+}
+.brand_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* footer */ 
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: rgb(192, 87, 7);
+}
+.follow .container {
+  justify-content: center;
+}
+.follow a i {
+  text-align: center;
+  font-size: 25px;
+  color :rgba(26, 26, 26, 0.59);
+  padding: 0 7px;
+  color: #c5c5c4;
+}
+.follow h3 {
+  font-weight: 500;
+    font-size: 30px;
+    color: #c5c5c4;
+}
+.footer_lst_part{
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  background-image: linear-gradient(to top,rgba(0,0,0,1),rgba(255, 255, 255, 0.061)) ,url(../Image/footer-bg.jpg); 
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+.footer_logos {
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+.footer_lst_part .contact_head{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: -35px
+}
+.contact_img{
+  width: 300px;
+  position: relative;
+  height: 300px;
+} 
+.contact_img img {
+  width: 270px;
+  height: 250px;
+  object-fit: contain;
+}
+.contact__text{
+  position: absolute;
+  top: 19%;
+  left: 11%;
+}
+.footer_logos{
+  width: 40%;
+}
+.footer_logos figure img{
+  width: 200px;
+  margin: 0 2rem;
+  object-fit: contain;
+}
+.logo_img h3{ 
+  font-size: 20px;
+ margin-bottom: 40px;
+}
+.horeca_logo{
+  position: relative;
+}
+.horeca_logo::after{
+  content: "";
+  display: inline-block;
+  background-color: gray;
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  right: .5rem;
+}
+
+@media (max-width: 1170px) {
+  .bigger_response img {
+    display: none;
+   }
+}
+@media (max-width: 992px) { 
+  .main-nav_links {
+    display: none;
+  }
+   /* header */
+   .sec_part  {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .sec_part_text {
+    max-width: 70%;
+  }
+  #main_header_logo {
+    width:260px;
+  }
+  .bigger_response img {
+    display: none;
+   }
+   /*  footer */
+   .footer_logos , .footer_lst_part .container {
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+   }
+   .footer_logos {
+     margin-top: 0;
+   }
+ }
+
+ @media (max-width: 768px) {
+  .about_part {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .about_part_text {
+    max-width: 350px
+  }
+
+  .horeca_article figure {
+    width: 250px;
+  }
+  .horeca_article_text {
+    width: 50%;
+  }
+ /*newsletter */
+ .news_mail {
+ padding: 4px 10px 4px 10px;
+
+}
+.submit-btn {
+   padding: 5px 20px 5px 20px;
+   margin-left: -22px;
+}
+.horeca_article figure {
+  width: 60%;
+}
+.horeca_article_text {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.existing_customer figure {
+ order: 1;
+}
+.med-response {
+  display: none;
+}
+
+}
+@media (max-width: 605px) {
+  .response {
+    display: none;
+  }
+  .brand_logo figure {
+    width: 16%;
+  }
+
+}
+@media (max-width: 405px) {
+  .small-response {
+    display: none;
+  }
+  .follow .container {
+    flex-direction: column;
+   width: 90%;
+   align-items: center;
+  }
+}
